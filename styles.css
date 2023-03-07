@@ -9,6 +9,7 @@
 body{
     background-image: url(background.jpg);
     background-attachment: fixed;
+    background-size: cover;
 }
 
 #blur-background{
@@ -79,6 +80,16 @@ body{
     font-weight: bold;
 }
 
+.header-title{
+    background-color: rgba(34, 34, 34, 0.5);
+    color: white
+}
+
+.colspan-center{
+    background-color: rgba(34, 34, 34, 0.5);
+    color: white;
+}
+
 table{
     border-collapse: collapse;
     margin: 0 auto;
@@ -91,12 +102,14 @@ th, td{
 }
 
 input{
-    width: 350px;
+    width: 100%;
+    font-size: 1.2em;
 }
 
 label{
     font-family: 'Comfortaa', cursive;
     font-family: 'Tilt Neon', cursive;
+    font-size: 1.5em;
 }
 
 .label-description{
@@ -109,11 +122,13 @@ textarea{
     resize: none;
     font-family: 'Comfortaa', cursive;
     font-family: 'Tilt Neon', cursive;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .computo{
     font-weight: normal;
-    font-size: .7rem;
+    font-size: .9rem;
 }
 
 .table-2-container{
@@ -131,6 +146,28 @@ input[type="text"]{
     background-color: rgb(255, 255, 255, .5);
 }
 
-input[type="text"]:before{
-    border-top: 0;
+input:focus{
+    outline: none;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.btn-env{
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #262626;
+    background-color: #eee;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.btn-env:hover{
+    background-color: #e3e3e3;
+    border: 2px solid #343434;
 }
